@@ -16,6 +16,7 @@ export default function App() {
     return (
       <div className="App">
         <p>Failed to get Customers</p>
+        <pre>{error?.toString()}</pre>
       </div>
     );
   }
@@ -32,7 +33,7 @@ export default function App() {
     <div className="App">
       <div
         style={{
-          textAlign: "left"
+          textAlign: "left",
         }}
       >
         <label htmlFor="customers">Customer:</label>
